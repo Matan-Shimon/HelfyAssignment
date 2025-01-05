@@ -1,0 +1,27 @@
+/* Container for the Home button */
+.home-button-container {
+  position: absolute; /* Ensure the button is positioned absolutely within the page */
+  top: 10px; /* Adjust spacing from the top of the screen */
+  left: 10px; /* Align the button to the left edge of the page */
+  z-index: 1000; /* Ensure the button appears above other elements */
+}
+
+/* Styling for the Home button */
+.home-button {
+  display: inline-block; /* Display as an inline block for proper layout */
+  padding: 10px 20px; /* Add padding around the text for spacing */
+  font-size: 16px; /* Set font size for readability */
+  color: #fff; /* White text color */
+  background-color: hsl(162, 73%, 46%); /* Green background color, matches the theme */
+  border: none; /* Remove the default border */
+  border-radius: 5px; /* Rounded corners for the button */
+  text-align: center; /* Center-align text inside the button */
+  text-decoration: none; /* Remove underlines from the link */
+  cursor: pointer; /* Change the cursor to a pointer to indicate it's clickable */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Hover effect for the Home button */
+.home-button:hover {
+  background-color: hsl(162, 73%, 36%); /* Slightly darker green when hovered */
+}

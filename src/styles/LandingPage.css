@@ -1,0 +1,53 @@
+/* LandingPage CSS */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure it takes full height */
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.landing-page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.landing-button {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #20c997;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.landing-button:hover {
+  background-color: #17a2b8;
+}
+
+@media (max-width: 768px) {
+  .landing-page {
+    padding: 10px;
+  }
+
+  .landing-button {
+    width: 100%;
+    max-width: 260px;
+  }
+}

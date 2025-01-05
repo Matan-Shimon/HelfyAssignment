@@ -1,0 +1,28 @@
+/* Search Filter */
+.search-filter {
+  display: flex;
+  justify-content: center; /* Center the search input field */
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.search-filter input {
+  width: 620px;
+  max-width: 100%; /* Ensure it doesn't exceed container width */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for input */
+  text-align: left;
+  padding-left: 10px;
+}
+  
+@media (max-width: 768px) {
+  /* Adjust search input field width for mobile */
+  .search-filter input {
+    width: calc(100% - 40px); /* Adjust width to match the product's width */
+    margin: 0 20px; /* Add padding to align with product cards */
+  }
+}
+  

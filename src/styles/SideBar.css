@@ -1,0 +1,98 @@
+/* Sidebar Container */
+.navigation {
+  position: fixed; /* Fix the sidebar to the right of the screen */
+  top: 0;
+  right: -100%; /* Initially hidden off-screen */
+  width: 220px;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #fff; /* White background */
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  justify-content: start; /* Align the items at the top */
+  padding: 20px;
+  font-family: "Poppins", sans-serif; /* Apply font */
+  z-index: 1000; /* Ensure it appears above other elements */
+  transition: right 0.3s ease; /* Smooth slide-in animation */
+}
+
+/* When Sidebar is Open */
+.navigation.open {
+  right: 0; /* Move the sidebar into view */
+}
+
+/* Close Button Styling (X) */
+.close-btn {
+  position: absolute;
+  top: 10px; /* Position it at the top of the sidebar */
+  right: 10px; /* Position it on the right side */
+  font-size: 30px; /* Size of the 'X' button */
+  cursor: pointer; /* Make the cursor a pointer to indicate it's clickable */
+  z-index: 1001; /* Ensure it is above other elements */
+  color: #000; /* Black color for the close button */
+}
+
+/* Sidebar Links Styling */
+.navigation a {
+  text-decoration: none; /* Remove the underline */
+  font-size: 18px; /* Set font size for the links */
+  margin: 15px 0; /* Space out the links vertically */
+  padding: 15px 25px; /* Add padding inside the link */
+  border-radius: 10px; /* Rounded corners for the links */
+  text-align: center; /* Center the text inside the link */
+  color: #20c997; /* Green color for the text */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  font-weight: bold; /* Make the text bold */
+  width: 100%; /* Ensure links take up full width of the sidebar */
+  background-color: #fff; /* White background */
+}
+
+/* Hover effect: Change background to gray */
+.navigation a:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  color: #20c997; /* Keep the text color green on hover */
+}
+
+/* Burger Menu */
+.burger-menu {
+  display: flex;
+  justify-content: flex-end; /* Position burger menu to the right */
+  padding: 10px 20px; /* Add padding for spacing */
+  cursor: pointer; /* Make the cursor a pointer to indicate it's clickable */
+  font-size: 24px; /* Font size for the burger icon */
+  background-color: #fff; /* White background for the burger menu */
+  border-bottom: 2px solid #ccc; /* Border at the bottom */
+  z-index: 1001; /* Ensure it appears above other elements */
+}
+
+/* Sidebar on Mobile: Full Width */
+@media (max-width: 768px) {
+  .navigation {
+    right: -120%; /* Sidebar hidden by default on mobile */
+    width: 100%; /* Sidebar takes up full width on mobile */
+  }
+
+  .navigation.open {
+    right: 0; /* Sidebar slides in when open */
+  }
+
+  .burger-menu {
+    position: absolute; /* Position the burger menu in the top-right corner */
+    top: 15px; /* Top position */
+    right: 15px; /* Right position */
+  }
+
+  /* Full width sidebar in mobile view */
+  .navigation {
+    width: 100%;
+  }
+
+  /* Make sure close button is visible when sidebar is open */
+  .close-btn {
+    display: none; /* Show close button */
+  }
+
+  /* Hide close button when the sidebar is closed */
+  .navigation:not(.open) .close-btn {
+    display: none; /* Hide the 'X' button if the sidebar is closed */
+  }
+}

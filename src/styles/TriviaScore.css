@@ -1,0 +1,22 @@
+/* Trivia Score Styling */
+.trivia-score h2 {
+  font-size: 24px; /* Font size for the score text */
+  margin-bottom: 20px; /* Space below the score */
+}
+  
+/* Styling for Restart Button */
+.restart-button {
+  padding: 10px 20px; /* Padding inside the restart button */
+  font-size: 16px; /* Font size for button text */
+  background-color: #20c997; /* Green background color */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.2s ease; /* Smooth transition for background color */
+}
+
+/* Hover Effect for Restart Button */
+.restart-button:hover {
+  background-color: #17a2b8; /* Change background color on hover */
+}

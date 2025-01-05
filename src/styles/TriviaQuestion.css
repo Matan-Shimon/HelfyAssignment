@@ -1,0 +1,45 @@
+/* Styling for Trivia Question */
+.trivia-question h2 {
+    font-size: 20px; /* Font size for the question */
+    margin-bottom: 20px; /* Space below the question */
+    margin-top: 50px; /* Add space below the Home button */
+  }
+  
+/* Styling for Answer Options */
+.options {
+  display: flex; /* Flexbox for arranging the options */
+  flex-direction: column; /* Stack options vertically */
+  gap: 10px; /* Space between options */
+  margin-top: 20px; /* Space above the options */
+}
+
+/* Styling for Option Buttons */
+.option-button {
+  padding: 10px 20px; /* Padding inside the buttons */
+  font-size: 16px; /* Font size for button text */
+  background-color: #20c997; /* Green background color */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change the cursor to pointer on hover */
+  transition: background-color 0.2s ease; /* Smooth transition for background color */
+}
+
+/* Hover Effect for Option Buttons */
+.option-button:hover {
+  background-color: #17a2b8; /* Change background color on hover */
+}
+
+/* Mobile Styling for Trivia Page */
+@media (max-width: 768px) {
+  /* Adjust gap between options on mobile */
+  .options {
+    gap: 8px; /* Reduce gap between option buttons */
+  }
+
+  /* Adjust font size and padding for option buttons on mobile */
+  .option-button {
+    font-size: 14px; /* Smaller font size */
+    padding: 8px 16px; /* Smaller padding */
+  }
+}
